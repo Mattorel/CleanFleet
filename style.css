@@ -5,7 +5,7 @@ html, body {
     display: flex;
     flex-direction: column;
     font-family:sans-serif;
-    background-color: lightgray;
+    background-color: rgb(255, 255, 255);
   
 }
 /* Content Styles */
@@ -17,17 +17,34 @@ html, body {
 }
 
 
-/* Header Styling */
+/* Header Styling with Background Image */
 header {
+    background-image: url("/assets/navbanner.png"); /* Path to your header background image */
+    background-size:cover; /* Ensures the image covers the entire header area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Text color for readability */
     text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+    font-size: 20pt;
+    padding-top: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+    
+    
 }
+
+
 
 /* Navigation Styling */
 nav {
-    margin-top: 10px;
+    align-self: flex-end;
+    width: 100%;
+    padding-top: 10%;
+    padding-bottom: 20%;
 }
 
 nav ul {
@@ -36,10 +53,15 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    
 }
 
 nav ul li {
     display: inline;
+    background-color: rgb(44, 123, 189);
+    padding: 10px 20px;
+    border-radius: 5px;
+    
 }
 
 nav ul li a {
@@ -52,7 +74,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: rgb(44, 123, 189)
 }
 
 
@@ -68,6 +90,13 @@ h2 {
 /* Gallery Styles */
 .gallery {
     padding: 20px;
+}
+
+.navbanner {
+
+  width: 1;
+  display: block;
+ 
 }
 
 .gallery-grid {
@@ -108,7 +137,7 @@ th {
 }
 /* Footer styling */
 footer {
-    background-color: #333;
+    background-color:  rgb(44, 123, 189);
     color: white;
     padding: 20px;
     text-align: center;
